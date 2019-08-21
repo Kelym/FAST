@@ -936,12 +936,9 @@ class Seq2SeqAgent(BaseAgent):
             for idx in range(batch_size):
                 instr_id = traj[idx]['instr_id']
                 if instr_id not in self.cache_candidates:
-                    cand = {
-                            'traj': traj[idx],
-                            'cand':[]
-                            }
+                    cand = []
                     for item in ending_queue[idx].queue:
-                        cand['cand'].append((instr_id, item.world_states, item.actions, item.flogit.sum, item.flogit.mean, item.flogp.sum, item.flogp.mean, item.pm, item.speaker, item.scorer))
+                        cand.append((instr_id, item.world_states, item.actions, item.flogit.sum, item.flogit.mean, item.flogp.sum, item.flogp.mean, item.pm, item.speaker, item.scorer))
                     self.cache_candidates[instr_id] = cand
 
         # cache the search progress

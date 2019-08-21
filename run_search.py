@@ -244,7 +244,6 @@ def eval_gamma(args, agent, train_env, val_envs):
 
 def run_search(args, agent, train_env, val_envs):
     for env_name, (val_env, evaluator) in sorted(val_envs.items()):
-        #if env_name is not 'val_unseen': continue
         print("evaluating on {}".format(env_name))
         agent.env = val_env
         if hasattr(agent, 'speaker') and agent.speaker:
@@ -275,7 +274,7 @@ def cache(args, agent, train_env, val_envs):
 
     print(cache_env_name)
     for env_name, env in zip(cache_env_name,cache_env):
-        if env_name is not 'val_unseen': continue
+        #if env_name is not 'val_unseen': continue
         agent.env = env
         if agent.speaker: agent.speaker.env = env
         print("Generating candidates for", env_name)
