@@ -111,6 +111,10 @@ cd ..
                                    --load_reranker tasks/R2R/experiments/[name of the reranker model]
     ```
 
+## Reproducing results & Release model
+
+If you want to skip all the steps above, here is my trained SMNA model (`smna_model`) and intermediate files (`cache_XXX.json`) that I used to produce the result in the paper: [Google Drive](https://drive.google.com/drive/folders/1WDi2-SwjadehFo6DMwJNJwBkJh-elzqg?usp=sharing),
+
 
 ## Directory Structure
 
