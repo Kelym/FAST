@@ -140,6 +140,8 @@ The main entrance to the framework is `run_search.py`. Follower agents live in `
 
 3. `--image_feature_type none` flag allow you to verify that your script is running, without loading the actual ImageFeatures. 
 
+4. If you need more help, file an issue and drop me an email (`kayke@cs_dot_washington_dot_edu`), I'd get back to you as soon as I can!  
+
 
 ## Acknowledgements
 
