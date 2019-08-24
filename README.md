@@ -2,7 +2,7 @@
 
 This is the PyTorch implementation of our paper:
 
-**Tactical Rewind: Self-Correction via Backtracking in Vision-and-Language Navigation**
+[**Tactical Rewind: Self-Correction via Backtracking in Vision-and-Language Navigation**](http://openaccess.thecvf.com/content_CVPR_2019/html/Ke_Tactical_Rewind_Self-Correction_via_Backtracking_in_Vision-And-Language_Navigation_CVPR_2019_paper.html)
 _Liyiming Ke_, Xiujun Li, Yonatan Bisk, Ari Holtzman, Zhe Gan, Jingjing Liu, Jianfeng Gao, Yejin Choi, Siddhartha Srinivasa.
 Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019. **(Oral)**
 
