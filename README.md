@@ -2,7 +2,8 @@
 
 This is the PyTorch implementation of our paper:
 
-**Tactical Rewind: Self-Correction via Backtracking in Vision-and-Language Navigation**
+[**Tactical Rewind: Self-Correction via Backtracking in Vision-and-Language Navigation**](http://openaccess.thecvf.com/content_CVPR_2019/html/Ke_Tactical_Rewind_Self-Correction_via_Backtracking_in_Vision-And-Language_Navigation_CVPR_2019_paper.html)
+
 _Liyiming Ke_, Xiujun Li, Yonatan Bisk, Ari Holtzman, Zhe Gan, Jingjing Liu, Jianfeng Gao, Yejin Choi, Siddhartha Srinivasa.
 Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019. **(Oral)**
 
@@ -110,6 +111,10 @@ cd ..
                                    --experiment_name tmp
                                    --load_reranker tasks/R2R/experiments/[name of the reranker model]
     ```
+
+## Reproducing results & Release model
+
+If you want to skip all the steps above, here is my trained SMNA model (`smna_model`) and intermediate files (`cache_XXX.json`) that I used to produce the result in the paper: [Google Drive](https://drive.google.com/drive/folders/1WDi2-SwjadehFo6DMwJNJwBkJh-elzqg?usp=sharing),
 
 
 ## Directory Structure
