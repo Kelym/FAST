@@ -105,10 +105,11 @@ cd ..
     ```
     python tasks/R2R/run_search.py --job search
                                    --load_follower tasks/R2R/experiments/smna/snapshots/[name of the latest model]
-                                   --max_episode_len 55
+                                   --max_episode_len 40
                                    --K 20
                                    --logit 
-                                   --experiment_name tmp
+                                   --beam
+                                   --experiment_name FAST-long
                                    --load_reranker tasks/R2R/experiments/[name of the reranker model]
     ```
 

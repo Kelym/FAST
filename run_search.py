@@ -298,6 +298,7 @@ def make_arg_parser():
     parser.add_argument("--inject_stop", action='store_true')
     parser.add_argument("--load_reranker", type=str, default='')
     parser.add_argument("--K", type=int, default=10)
+    parser.add_argument("--beam", action='store_true')
     parser.add_argument("--load_speaker", type=str,
             default='./tasks/R2R/experiments/release/speaker_final_release')
     parser.add_argument("--job", choices=['search','sweep','train','cache','test'],default='search')
@@ -351,6 +352,7 @@ def main(args):
         agent.reranker.load_state_dict(torch.load(args.load_reranker))
     agent.inject_stop = args.inject_stop
     agent.K = args.K
+    agent.beam = args.beam
 
 
     # Load speaker

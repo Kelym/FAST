@@ -881,7 +881,7 @@ class Seq2SeqAgent(BaseAgent):
                         # avoid re-visiting
                         continue
 
-                    if ac_idx == 0:
+                    if not self.beam and ac_idx == 0:
                         _new_heur[ac] = float('inf')
 
                     if ac == 0:
